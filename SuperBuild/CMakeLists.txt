@@ -55,7 +55,9 @@ message(STATUS "SuperBuild binary files will be located to: ${SB_BINARY_DIR}")
 # ---------------------------------------------------------------------------------------------
 # Open Source Computer Vision (OpenCV)
 #
-set(ODM_OpenCV_Version 2.4.11)
+#set(ODM_OpenCV_Version 2.4.11)
+set(ODM_OpenCV_Version 3.0)
+set(OPENCV_DIR "/usr/local/lib")
 option(ODM_BUILD_OpenCV "Force to build OpenCV library" OFF)
 
 SETUP_EXTERNAL_PROJECT(OpenCV ${ODM_OpenCV_Version} ${ODM_BUILD_OpenCV})
